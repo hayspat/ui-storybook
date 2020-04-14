@@ -1,0 +1,22 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import Sidemenu from "../components/Sidemenu";
+
+<Meta title="Design System|Menus" component={Sidemenu} />
+
+# Buttons
+
+Buttons are used to trigger actions within an application.
+
+## Usage
+
+Buttons are used to trigger internal actions within your web applications.
+
+## Primary Buttons
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Preview withToolbar>
+  <Story name="Sidemenu">
+    <Sidemenu />
+  </Story>
+</Preview>
