@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import { css } from "styled-components/macro";
-import { Searchbar } from ".";
+import Searchbar from "./Searchbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 

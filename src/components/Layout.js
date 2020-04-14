@@ -1,8 +1,10 @@
 import React from "react";
 import tw from "twin.macro";
 import { css } from "styled-components/macro";
-import { TopBar, Button } from ".";
+
 import SideMenu from "./Sidemenu";
+import TopBar from "./TopBar";
+import Button from "./Button";
 
 const Layout = () => {
   return (

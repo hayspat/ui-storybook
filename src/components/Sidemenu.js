@@ -1,6 +1,8 @@
 import React from "react";
-import { SideMenuContainer, MenuItem, Logo } from ".";
 import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
+import SideMenuContainer from "./SideMenuContainer";
+import Logo from "./Logo";
+import MenuItem from "./MenuItem";
 
 const SideMenu = () => {
   return (
