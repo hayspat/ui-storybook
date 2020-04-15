@@ -8,7 +8,6 @@ const SideMenu = () => {
   return (
     <SideMenuContainer>
       <Logo />
-
       <MenuItem faIcon={faAddressBook}>Test</MenuItem>
       <MenuItem faIcon={faAddressBook}>Test</MenuItem>
       <MenuItem faIcon={faAddressBook}>Test</MenuItem>
