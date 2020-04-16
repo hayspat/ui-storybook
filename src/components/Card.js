@@ -1,22 +1,29 @@
 import React from "react";
-import tw from "twin.macro";
-import styled from "styled-components/macro";
 
-const StyledButton = styled.button(
-  ({ isPrimary, isSecondary, isSmall, isRounded, theme }) => [
-    tw`px-4 py-2 font-bold rounded `,
+const Card = (props) => {
+  return (
+    <div className="max-w-sm overflow-hidden bg-white border rounded-lg">
+      <img src={props.image} alt={props.image} />
+      <div className="p-6 ">
+        <div className="text-xs font-semibold tracking-wide text-gray-600 uppercase">
+          {props.beds} beds * {props.baths} baths
+        </div>
+        <h4 className="text-lg font-semibold leading-tight truncate">
+          {props.title}
+        </h4>
 
-    isPrimary && tw`text-white bg-blue-500 hover:bg-blue-700`,
+        <div className="mt-1 ">
+          ${props.price} <span className="text-sm text-gray-600"> / wk</span>
+        </div>
+        <div className="mt-4 font-semibold text-teal-600">
+          {props.rating}/5 stars{"   "}
+          <span className="text-sm text-gray-600">
+            (based on {props.reviewCount}) reviews
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-    isRounded && tw`text-white bg-blue-500 rounded-full hover:bg-blue-700`,
-
-    isSecondary &&
-      tw`font-semibold text-blue-700 bg-transparent border border-blue-500 hover:bg-blue-500 hover:text-white hover:border-transparent`,
-
-    isSmall ? tw`text-sm` : tw`text-lg`,
-  ]
-);
-
-const Button = (props) => <StyledButton {...props} />;
-
-export default Button;
+export default Card;

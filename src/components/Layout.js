@@ -6,8 +6,11 @@ import SideMenu from "./Sidemenu";
 import TopBar from "./TopBar";
 import Button from "./Button";
 import Form from "./Form";
+import Card from "./Card";
+import Header from "./Header";
+import Dropdown from "./Dropdown";
 
-const Layout = () => {
+const Layout = (props) => {
   return (
     <div tw="">
       <SideMenu />
@@ -24,9 +27,6 @@ const Layout = () => {
                 </Button>
                 <Button tw="mx-4" isSecondary>
                   Cancel
-                </Button>
-                <Button tw="mx-4" isPrimary isSmall>
-                  Close
                 </Button>
               </div>
             </div>

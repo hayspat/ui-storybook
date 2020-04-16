@@ -5,9 +5,9 @@ import Searchbar from "./Searchbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 
-const TopBar = props => (
-  <div tw="w-full flex items-center">
-    <Searchbar tw="w-full" />
+const TopBar = (props) => (
+  <div tw="w-full flex items-center bg-white shadow-xl">
+    <Searchbar tw="w-full shadow-none focus:outline-none" />
     <FontAwesomeIcon tw="h-6 w-6 text-gray-600 text-2xl mx-4" icon={faBell} />
     <img
       tw="rounded-full h-10 w-10 mx-4"

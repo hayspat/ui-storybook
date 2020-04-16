@@ -4,7 +4,7 @@ import SideMenuContainer from "./SideMenuContainer";
 import Logo from "./Logo";
 import MenuItem from "./MenuItem";
 
-const SideMenu = () => {
+const SideMenu = (props) => {
   return (
     <SideMenuContainer>
       <Logo />

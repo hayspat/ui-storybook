@@ -4,7 +4,7 @@ import styled, { css } from "styled-components/macro";
 
 const SideMenu = styled.div(({ theme }) => [
   // The base button styles added with the tw macro
-  tw`fixed w-64 h-screen bg-purple-800`
+  tw`fixed w-64 h-full bg-purple-800`,
 
   /*     // Use props to conditionally style your components
     isPrimary && tw`text-white bg-black border-black`,
@@ -25,7 +25,7 @@ const SideMenu = styled.div(({ theme }) => [
     ` */
 ]);
 
-const SideMenuContainer = props => (
+const SideMenuContainer = (props) => (
   <SideMenu {...props}>{props.children}</SideMenu>
 );
 

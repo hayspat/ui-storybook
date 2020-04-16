@@ -2,8 +2,19 @@ import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
 import Sidemenu from "../components/Sidemenu";
 import TopBar from "../components/TopBar";
 import Layout from "../components/Layout";
+import Card from "../components/Card";
+import Header from "../components/Header";
+import "../index.css";
 
 <Meta title="Design System|Layout" />
+
+## Tertiary Buttons
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Story name="navbar">
+  <Header />
+</Story>
 
 ## Tertiary Buttons
 
@@ -26,5 +37,23 @@ Primary buttons are used as a call to action and indicate the most important act
 Primary buttons are used as a call to action and indicate the most important action on a page.
 
 <Story name="sidelayout">
-  <Layout />
+  <Layout storyMode />
+</Story>
+
+## Tertiary Buttons
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Story name="card">
+  <div className="flex justify-center items-center">
+    <Card
+      image="https://ucdn.tatilbudur.net/Otel/960x475/iq-belek-hotel_304795.jpg"
+      title="Test hotel"
+      beds={3}
+      baths={5}
+      price="2,000.23"
+      rating={4}
+      reviewCount={54}
+    />
+  </div>
 </Story>
